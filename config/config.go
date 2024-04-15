@@ -152,7 +152,7 @@ func (c *config) setupEnvVars(log *zap.Logger, cmd *cobra.Command) {
 		ipBlocked = true
 	}
 	if c.Host == "" {
-		c.Host = "http://" + shriya-7dc5e30122bf.herokuapp.com + ":" + strconv.Itoa(c.Port)
+		c.Host = "http://" + ip + ":" + strconv.Itoa(c.Port)
 		if c.UsePublicIP {
 			if ipBlocked {
 				log.Sugar().Warn("Can't get public IP, using local IP")
